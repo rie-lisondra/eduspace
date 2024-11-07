@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>EduSpace</title>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-blue-50 text-blue-900 font-poppins">
+
+  <header class="flex justify-end w-full sticky top-0 bg-blue-50 z-10">
+    <ul class="m-2 mt-7 mb-5 inline-flex tracking-wide text-xl">
+      <li class="mr-4"><a href="login.html">Login</a></li>
+      <li class="mr-4"><a href="#">|</a></li>
+      <li class="mr-14"><a href="registration.html">Register</a></li>
+    </ul>
+  </header>
+
+  <main>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section text-center min-h-screen flex flex-col items-center justify-center">
+      <h1 class="font-league font-extrabold text-8xl tracking-wide">
+        WELCOME TO EduSpace!
+      </h1>
+      <p class="leading-10 text-2xl text-justify mx-40 mt-5">
+        Your go-to digital hub for organized and easy access to your school resources.
+        Here, teachers can seamlessly share assignments, notes, and study materials
+        tailored to each class, while students gain access to their resources in just
+        a few clicks.
+      </p>
+      <!-- How It Works Button -->
+      <a href="#how-it-works-section" class="mt-10">
+        <button class="border-2 border-blue-800 py-3 px-10 rounded-2xl text-lg">
+          How It Works
+        </button>
+      </a>
+    </section>
+
+    <!-- How It Works Section -->
+    <div id="how-it-works-section" class="grid grid-cols-2 min-h-screen mx-24">
+      <!-- Left Column -->
+      <section class="how-it-works-section flex flex-col justify-center">
+        <h1 class="font-league font-extrabold text-8xl tracking-wide text-left">
+          How It Works
+        </h1>
+        <p class="leading-10 text-2xl text-justify mt-8">
+          Teachers provide unique class codes for each subject, ensuring that only students from the 
+          assigned section can access specific materials. Once a student enters their class code, they’ll
+          find all relevant files and resources in one place, organized by subject and section.
+        </p>
+      </section>
+
+      <!-- Right Column - Carousel with 3D Shadow Effect -->
+      <div class="relative ml-16 flex items-center justify-center">
+        <!-- Shadow Rectangle -->
+        <div class="absolute w-[560px] h-96 bg-blue-900 rounded-[40px] translate-x-3 translate-y-3"></div>
+    
+        <!-- Carousel Container (Foreground Rectangle) -->
+        <div class="carousel-container relative w-[550px] h-96 bg-white overflow-hidden border-2 border-blue-800 rounded-[40px] shadow-xl text-center">
+          <div id="carousel" class="carousel flex transition-transform duration-500 mt-28">
+            <!-- Slide 1 -->
+            <div class="carousel-slide w-full flex-shrink-0">
+              <h2 class="w-full text-5xl font-extrabold font-league">
+                Explore our features
+              </h2>
+              <p class="mx-24 mt-4 text-xl leading-normal">
+                One login gives you access to all subjects and sections assigned to you.
+              </p>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide w-full flex-shrink-0">
+              <h2 class="w-full text-5xl font-extrabold font-league">
+                Explore our features
+              </h2>
+              <p class="mx-20 mt-3 text-xl leading-normal">
+                Stay in the loop with notifications for new uploads and announcements from your teachers.
+              </p>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide w-full flex-shrink-0">
+              <h2 class="w-full text-5xl font-extrabold font-league">
+                Explore our features
+              </h2>
+              <p class="mx-24 mt-3 text-xl leading-normal">
+                Students can archive past subjects for an organized dashboard
+                that grows with them.
+              </p>
+            </div>
+          </div>
+          <!-- Carousel Controls -->
+          <button onclick="prevSlide()" class="absolute top-1/2 left-4 transform -translate-y-1/2 text-blue-800 px-2 py-1 rounded-full">
+            &#10094;
+          </button>
+          <button onclick="nextSlide()" class="absolute top-1/2 right-4 transform -translate-y-1/2 text-blue-800 px-2 py-1 rounded-full">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Get Started Section -->
+    <section class="welcome-section text-center min-h-screen flex flex-col items-center justify-center">
+      <h1 class="font-league font-extrabold text-8xl tracking-wide">
+        Get Started Today
+      </h1>
+      <p class="leading-10 text-2xl text-justify mx-72 mt-5">
+        Simply log in, enter your class code, and start exploring your resources. 
+        Learning has never been this organized, secure, and easy to access!
+      </p>
+    </section>
+
+    <!-- Register Section -->
+    <section class="register-button-section flex items-center justify-center -mt-44 mb-32">
+      <a href="#">
+        <button class="border-2 bg-blue-800 py-4 px-14 rounded-[55px] text-lg text-white">
+          Register
+        </button>
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="flex items-center justify-center bg-blue-800 w-full h-[110px]">
+    <h3 class="text-white tracking-wide mr-36">
+      Contact Information: 09XX-XXX-XXXX
+    </h3>
+    <p class="text-white tracking-wide mr-36">
+      Email: <a href="mailto:support@eduspace.com" class="hover:underline">support@eduspace.com</a>
+    </p>
+    <h3 class="text-white tracking-wide mr-36">
+      Private Policy
+    </h3>
+    <h3 class="text-white tracking-wide">
+      Terms and Condition
+    </h3>
+  </footer>
+
+  <script src="carousel.js"></script>
+</body>
+</html>

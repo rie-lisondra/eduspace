@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>EduSpace | Login</title>
+</head>
+<body class="bg-blue-50 text-blue-900 font-poppins overflow-hidden">
+    <header id="page-header" class="flex justify-end w-full sticky top-0 bg-blue-50 z-10">
+        <ul class="m-2 mt-7 mb-5 inline-flex tracking-wide text-xl">
+            <li class="mr-4"><a href="index.html"> Home</a></li>
+            <li class="mr-4"><a href="#">|</a></li>
+            <li class="mr-14"><a href="registration.html">Register</a></li>
+        </ul>
+    </header>
+
+    <div class="grid grid-cols-2 items-center justify-center min-h-screen mx-24">
+        <section class="flex flex-col justify-center">
+            <h1 class="font-league font-extrabold text-8xl tracking-wide text-left">
+                Welcome Back to EduSpace!
+            </h1>
+            <p class="leading-10 text-2xl text-justify mt-8 mr-10">
+                Your learning journey awaits. Log in to access personalized resources, 
+                track your progress, and connect with a supportive learning community.
+            </p>
+        </section>
+
+        <div class="relative ml-20 flex items-center justify-center">
+            <div class="w-[430px] h-[480px] bg-white border-2 border-blue-800 rounded-[50px] shadow-xl text-center">
+                <h2 class="font-league text-5xl font-extrabold tracking-wide text-blue-900 my-7">
+                    LOGIN
+                </h2>
+                <form action="dashboard.html" method="POST">
+                    <div class="mb-5">
+                        <label class="float-left ml-14 mb-2" for="email">Email or ID:</label>
+                        <input type="text" id="email" placeholder="Email or Student ID" class="w-80 h-14 px-4 py-2 border border-blue-300 rounded-3xl focus:outline-none focus:border-blue-500 text-sm">
+                    </div>
+                    <div class="mb-3">
+                        <label class="float-left ml-14 mb-2" for="password">Password:</label>
+                        <input type="password" id="password" placeholder="Password" class="w-80 h-14 px-4 py-2 border border-blue-300 rounded-3xl focus:outline-none focus:border-blue-500 text-sm">
+                    </div>
+                    <div class="flex items-center justify-between text-xs mb-4">
+                        <label class="text-blue-600">
+                            <input type="checkbox" class="ml-14 mr-2"> Remember password?
+                        </label>
+                    </div>
+                    <button type="submit" class="w-32 h-10 bg-blue-600 text-white py-2 rounded-md font-semibold hover:bg-blue-700 transition text-sm">Login</button>
+                </form>
+                <p class="mt-4 mx-9 text-sm text-center text-blue-700">
+                    New to EduSpace? <a href="registration.html" class="italic font-medium text-blue-600 hover:underline">Create an account</a> to start learning with us!
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

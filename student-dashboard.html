@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title> EduSpace | Student Dashboard </title>
+
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+      </style>
+</head>
+<body class="bg-blue-50 text-blue-900 font-poppins">
+    <!-- Sidebar -->
+    <div class="flex">
+        <aside class="group w-20 hover:w-48 h-screen transition-all duration-300 bg-blue-900 text-white flex flex-col items-center py-4 space-y-7">
+            <div class="flex items-center justify-center mt-16 space-x-4 w-full p-3 group-hover:pl-6 transition-all duration-300">
+                <i class="fas fa-home text-3xl"></i>
+                <span class="hidden group-hover:inline-block text-white">Home</span>
+            </div>
+            <div class="flex items-center justify-center  space-x-4 w-full p-3 group-hover:pl-6 transition-all duration-300">
+                <i class="fas fa-calendar text-3xl"></i>
+                <span class="hidden group-hover:inline-block text-white">Calendar</span>
+            </div>
+            <div class="flex items-center justify-center space-x-4 w-full p-3 group-hover:pl-6 transition-all duration-300">
+                <i class="fas fa-folder text-3xl"></i>
+                <span class="hidden group-hover:inline-block text-white">Classes</span>
+            </div>
+            <div class="flex items-center justify-center space-x-4 w-full p-3 group-hover:pl-6 transition-all duration-300">
+                <i class="fas fa-chalkboard-teacher text-3xl "></i>
+                <span class="hidden group-hover:inline-block text-white">Teachers</span>
+            </div>
+
+            <!-- Spacer to push icons to the bottom -->
+            <div class="mt-auto"></div>
+
+            <!-- Bottom Icons -->
+            <div class="flex items-center justify-center space-x-4 w-full p-3 group-hover:pl-6 transition-all duration-300">
+                <i class="fas fa-download text-3xl"></i>
+                <span class="hidden group-hover:inline-block text-white">Downloads</span>
+            </div>
+            <div class="flex items-center justify-center space-x-4 w-full p-3 group-hover:pl-6 transition-all duration-300">
+                <i class="fas fa-cog text-3xl"></i>
+                <span class="hidden group-hover:inline-block text-white">Settings</span>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-10 -mt-2">
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-6">
+                <h1 class="font-league text-4xl font-semibold tracking-[7px] text-blue-900">EduSpace</h1>
+                <div class="flex items-center space-x-4">
+                    <input type="text" placeholder="Search files" class="w-80 mr-5 px-4 py-2 border border-blue-200 rounded-full focus:outline-none focus:border-blue-500">
+                    <button class="p-2 text-blue-900 rounded-full"><i class="fas fa-plus text-3xl"></i></button>
+                    <button class="p-2 text-blue-900 rounded-full"><i class="fas fa-user text-3xl"></i></button>
+                </div>
+            </div>
+
+        <!-- Subjects Enrolled Section -->
+        <section>
+            <h2 class="text-xl font-medium tracking-widest text-blue-900 mb-4">SUBJECTS ENROLLED</h2>
+            <div id="subjectsList" class="grid grid-cols-3 gap-4">
+                <!-- Subject Cards will be dynamically added here -->
+            </div>
+            <div id="noSubjectsMessage" class="hidden text-center">
+                <img src="path/to/your/image.png" alt="No Subjects" class="w-24 mx-auto">
+                <p class="text-gray-500">Nothing Here</p>
+            </div>
+        </section>
+
+        <div class="my-60"> </div>
+
+        <!-- Recent Files Section -->
+        <section class="mt-8 grid items-center justify-center">
+            <div class="grid grid-cols-2 gap-8">
+                <!-- Recent Open Files -->
+                <div>
+                    <h2 class="text-xl font-medium tracking-wider text-blue-900 mb-4">RECENT OPEN FILES</h2>
+                    <ul id="openFilesList" class="space-y-2">
+                        <!-- List items for recent open files will be dynamically added -->
+                    </ul>
+                    <div id="noOpenFilesMessage" class="hidden text-center">
+                        <img src="path/to/your/image.png" alt="No Open Files" class="w-24 mx-auto">
+                        <p class="text-gray-500">Nothing Here</p>
+                    </div>
+                </div>
+
+                <!-- Recent Download Files -->
+                <div>
+                    <h2 class="text-xl font-bold text-blue-900 mb-4">RECENT DOWNLOAD FILES</h2>
+                    <ul id="downloadFilesList" class="space-y-2">
+                        <!-- List items for recent download files will be dynamically added -->
+                    </ul>
+                    <div id="noDownloadFilesMessage" class="hidden text-center">
+                        <img src="https://www.flaticon.com/free-icon/sunrise_13983166?term=nothing+here+yet&page=1&position=4&origin=tag&related_id=13983166" alt="No Download Files" class="w-24 mx-auto">
+                        <p class="text-gray-500">Nothing Here</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+    </div>
+    <script> src="dashboard.js" </script>
+</body>
+</html>

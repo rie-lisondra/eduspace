@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title> EduSpace | Registration </title>
+</head>
+<body class="bg-blue-50 text-blue-900 font-poppins">
+    <header id="page-header" class="flex justify-end w-full sticky top-0 bg-blue-50 z-10">
+        <ul class="m-2 mt-7 mb-5 inline-flex tracking-wide text-xl">
+            <li class="mr-4"><a href="index.html"> Home</a></li>
+            <li class="mr-4"><a href="#">|</a></li>
+            <li class="mr-14"><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+
+    <div class="relative flex items-center justify-center">
+        <div class="w-full h-[635px] mx-40 bg-white border-2 border-blue-800 rounded-[50px] shadow-xl text-center">
+            <h2 class="font-league text-4xl font-extrabold tracking-wide text-blue-900 my-7">
+                REGISTRATION
+            </h2>
+            <form action="teacher-dashboard.html" method="POST">
+                <div class="columns-3 mb-5 flex content-center justify-center space-x-8">
+                    <div>
+                        <label class="flex justify-start ml-2 mb-2" for="lname">Last Name: </label>
+                        <input type="text" id="lname" placeholder="Last Name" class="w-80 h-12 ml- px-4 py-2 border border-blue-300 rounded-3xl focus:outline-none focus:border-blue-500 text-sm">
+                    </div>
+                    <div>
+                        <label class="grid justify-start ml-2 mb-2" for="fname">First Name:</label>
+                        <input type="text" id="fname" placeholder="First Name" class="w-80 h-12 px-4 py-2 border border-blue-300 rounded-3xl focus:outline-none focus:border-blue-500 text-sm">
+                    </div>
+                    <div>
+                        <label class="grid justify-start ml-2 mb-2" for="mname">Middle Name:</label>
+                        <input type="text" id="mname" placeholder="Middle Name" class="w-80 h-12 px-4 py-2 border border-blue-300 rounded-3xl focus:outline-none focus:border-blue-500 text-sm">
+                    </div>
+                </div>
+
+                <div class="columns-3 mb-5 flex content-center justify-center space-x-8">
+                    <div>
+                        <label class="flex justify-start ml-2 mb-2" for="extension"> Name Extension: </label>
+                        <input type="text" id="extension" placeholder="Name Extension" class="w-80 h-12 ml- px-4 py-2 border border-blue-300 rounded-3xl focus:outline-none focus:border-blue-500 text-sm">
+                    </div>
+                    <div>
+                        <label class="grid justify-start ml-2 mb-2" for="gender">Gender:</label>
+                        <select type="Gender" id="gender" class="w-80 h-12 px-4 py-2 border border-blue-300 rounded-3xl focus:outline-none focus:border-blue-500 text-sm">
+                            <option value="Gender"> Select Gender </option>
+                            <option value="Male"> Male </option>
+                            <option value="Female"> Female </option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="grid justify-start ml-2 mb-2" for="birthdate"> Birthdate:</label>
+                        <input type="date" id="birthdate" placeholder="Birthdate" class="w-80 h-12 px-4 py-2 border border-blue-300 rounded-3xl focus:outline-none focus:border-blue-500 text-sm">
+                    </div>
+                </div>
+
+                <div class="columns-3 mb-5 flex content-center justify-center space-x-8">
+                    <div>
+                        <label class="flex justify-start ml-2 mb-2" for="id_employee"> Employee ID: </label>
+                        <input type="text" id="id_employee" placeholder="Employee ID" class="w-80 h-12 ml- px-4 py-2 border border-blue-300 rounded-3xl focus:outline-none focus:border-blue-500 text-sm">
+                    </div>
+                    <div>
+                        <label class="grid justify-start ml-2 mb-2" for="desgination"> Designation: </label>
+                        <input type="text" id="desgination" placeholder="Designation" class="w-80 h-12 px-4 py-2 border border-blue-300 rounded-3xl focus:outline-none focus:border-blue-500 text-sm">
+                    </div>
+                    <div>
+                        <label class="grid justify-start ml-2 mb-2" for="email"> Email: </label>
+                        <input type="text" id="email" placeholder="Email" class="w-80 h-12 px-4 py-2 border border-blue-300 rounded-3xl focus:outline-none focus:border-blue-500 text-sm">
+                    </div>
+                </div>
+                <div class="columns-2 mb-5 flex content-center justify-center space-x-8">
+                    <div>
+                        <label class="flex justify-start ml-2 mb-2" for="password"> Create Password: </label>
+                        <input type="text" id="password" placeholder="Create Password" class="w-80 h-12 ml- px-4 py-2 border border-blue-300 rounded-3xl focus:outline-none focus:border-blue-500 text-sm">
+                    </div>
+                    <div>
+                        <label class="grid justify-start ml-2 mb-2" for="re-password"> Re-enter Password:</label>
+                        <input type="text" id="re-password" placeholder="Re-enter Password" class="w-80 h-12 px-4 py-2 border border-blue-300 rounded-3xl focus:outline-none focus:border-blue-500 text-sm">
+                    </div>
+                </div>
+
+                <div class="flex content-center justify-center text-xs mb-4">
+                    <label class="text-blue-600">
+                        <input type="checkbox"> I agree to the Terms of Service and Privacy Policy.
+                    </label>
+                </div>
+                <button type="submit" class="w-44 h-12 bg-blue-600 text-white py-2 rounded-md font-semibold hover:bg-blue-700 transition text-sm">Submit</button>
+            </form>
+            <p class="mt-4 mx-9 text-sm text-center text-blue-700">
+                Already have an account? <a href="login.html" class="italic font-medium text-blue-600 hover:underline">Log in</a> to continue your journey.  
+            </p>
+        </div>
+    </div>
+</body>
+</html>
